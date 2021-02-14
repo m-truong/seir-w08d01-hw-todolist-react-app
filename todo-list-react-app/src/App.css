@@ -1,0 +1,105 @@
+* {
+  padding: 0;
+  margin: 0;
+  /* border: 0.5px solid black; */
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* direction inverted when using flex-column */
+  align-items: center;
+  /* centers inverted-vertically */
+  justify-content: center;
+  background: #cedee0;
+  font-family: "Barlow", sans-serif;
+  /* line-height: 3rem; */
+}
+
+.App {
+  background: #6ecae6;
+  /* rounds-corners */
+  border-radius: 10px;
+  border: 2px solid #a0abad;
+  /* add box-shadow */
+  box-shadow: 2px 2px 8px;
+  /* pads out inside */
+  padding: 50px;
+  /* expands width */
+  width: 50vw;
+  /* more vertical spacing */
+  /* line-height: 3rem; */
+}
+
+.list-item {
+  display: inline;
+}
+
+h1,
+h2 {
+  color: #35393a;
+  text-transform: capitalize;
+}
+
+h2 {
+  margin-top: 2rem;
+}
+
+label {
+  label: #35393a;
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding-bottom: 0.5rem;
+  margin-top: 1.2rem;
+}
+
+/* style li's */
+li {
+  /* removes bullet-points */
+  list-style: none;
+  font-size: 1.3rem;
+  font-weight: 1000;
+  /* add margin-padding */
+  margin: 1rem 0;
+  color: #35393a;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+li:hover {
+  color: gold;
+}
+input {
+  width: 100%;
+  font-size: 16px;
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  /* eliminates border */
+  border: 0;
+  border-radius: 9px;
+  padding: 12px 60px 12px 18px;
+}
+
+/* input[type="text"] { */
+/* display: inline-block; */
+/* } */
+
+input[type="checkbox"] {
+  display: inline;
+}
+
+input:checked + li {
+  text-decoration: line-through;
+  text-decoration-color: #a683e3;
+}
+
+/* div */
+
+div.completed li {
+  text-decoration: line-through;
+  text-decoration-color: #a683e3;
+}
